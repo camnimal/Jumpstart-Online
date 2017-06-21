@@ -15,7 +15,9 @@ function sumOfDigits(num){
 		
 	for(var i = 0; i < numStr.length; i++){
 		// or parseInt(numStr[i],10)
-		sum += +numStr[i];
+		//sum += Number(numStr[i]); using the Number keyword seems cleaner...isn't immediately clear the + is needed before numStr[i]
+		sum += +numStr[i]
+		
 	}	
 	return sum;
 }
